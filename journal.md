@@ -5,7 +5,8 @@
 ##fonctionnement du code de la fin du diapo de Unix:  
 Il s'agit d’un script Bash qui lit un fichier ligne par ligne pour déterminer si chaque ligne ressemble à une URL valide  
 "if [ $# -ne 1 ]" vérifie qu'il a reçu exactement un argument sinon il affiche un message d'erreur  
-"while read -r LINE" crée une boucle qui lit le fichier ligne par ligne, "-r" évite que les \ soient interprétés comme des caractères spéciaux.  
+"while read -r LINE" crée une boucle qui lit le fichier ligne par ligne  
+"-r" évite que les \ soient interprétés comme des caractères spéciaux.  
 "[ $LINE =~ ^https?:// ]]" vérifie si la ligne commence par https  
 "expr $NOK + 1" incrémente le compteur  
 "done < $FICHIER_URLS" signifie que la boucle lit depuis le fichier fourni  
