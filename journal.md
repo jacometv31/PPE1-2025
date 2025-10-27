@@ -35,3 +35,27 @@ Toutefois, j'ai remarqué que la numérotation ne commençait qu'à partir de la
 Le problème vient du fait que awk est exécuté dans une nouvelle instance à chaque itération du while, donc le compteur NR (numéro de ligne) repart de 1 à chaque fois.  
 J'ai donc décidé de faire un compteur manuel dans ma boucle.Avec i=1 avant de commencer la boucle, de remplacer la ligne "echo ${line}" par "echo -e "${i}\t${line}"" et de rajouter ((i++)) à la fin.  
 Afin de séparer les valeurs par des tabulations, j'ai utilisé \t ainsi que -e qui permet à echo d'interpréter les séquences spéciales comme tel.  
+  
+Exercice 2:  
+  
+1) Pour rajouter le code de HTTP de réponse à la requête des urls à chaque ligne, j'ai utilisé la commande curl en procédant de la manière suivante:  
+code=$(curl -o /dev/null -s -w "%{http_code}" "$line")  
+-o /dev/null permet d'ignorer le contenu téléchargé  
+-s permet de ne pas afficher de messages  
+-w "%{http_code}" permet d'afficher uniquement le code HTTP de la réponse__
+$line renvoie à ma liste d'urls  
+la commande curl permet juste de récupérer le code HTTP. Pour ce qui est de l'affichage, j'ai rajoué ${code} dans mon echo que j'ai entouré de \t afin de bien séparer avec des tabulations.  
+  
+2) Pour ce qui est de l'encodage, j'ai également utilisé la commande curl en procédant de la manière suivante:  
+encodage=$(curl -s -I "$line" | grep -i "content-type" | grep -oE "charset=[^; ]+" | cut -d= -f2)  
+curl -s -I "$line" permet de récupérer uniquement les entêtes HTTP de la réponse  
+grep -oE "charset=[^; ]+" permet d'extraire la partie charset'  
+cut -d= -f2 permet de garder uniquement la valeur (utf-8)  
+Pour l'affichage j'ai rajouter le ${encodage} à la fin de la ligne echo car quand je le plaçait avant ${line} cela provoquait un bug d'affichage.  
+  
+3) Pour compter les mots des différentes pages j'ai utilisé lynx. La commande complète est la suivante:  
+mots=$(lynx -dump -nolist "$line" | wc -w)  
+lynx -dump -nolist permet de convertir la page web en texte brut.  
+wc -w permet de compter les mots uniquement dans le texte lisible.  
+Pour l'affichage j'ai rajouter le ${mots} avant ${line} car quand je le plaçait à la fin de la ligne echo cela provoquait un bug d'affichage.  
+Le nombre de mots a pu être récupérer sur tous les sites sauf roboty.magistry.fr qui affiche un message d'erreur indiquant que l'accès à ce site est impossible.  
