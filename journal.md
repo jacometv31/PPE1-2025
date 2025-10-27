@@ -15,7 +15,9 @@ Il s'agit d’un script Bash qui lit un fichier ligne par ligne pour déterminer
 "done < $FICHIER_URLS" signifie que la boucle lit depuis le fichier fourni  
 À la fin, le script affiche le total des URL valides et douteuses
 
-##Mini projet: Exercice 1: Questions  
+##Mini projet:  
+  
+Exercice 1: Questions  
   
 1) Pourquoi ne pas utiliser la commande cat ?  
 Quand on utilise la commande cat, le code est le suivant: "cat fichier | while read". Toutefois, cela va créer un sous-shell.  
