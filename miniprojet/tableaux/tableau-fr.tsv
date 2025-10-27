@@ -1,11 +1,11 @@
 
-1	https://fr.wikipedia.org/wiki/Robot
-2	https://fr.wikipedia.org/wiki/Robot_de_cuisine
-3	fr.wikipedia.org/wiki/Robot_d%27indexation
-4	https://fr.wikipedia.org/wiki/Bot_informatique
-5	https://fr.wikipedia.org/wiki/Atlas_(robot)
-6	https://roboty.magistry.fr
-7	https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
-8	https://fr.wiktionary.org/wiki/robot
-9	https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
-10	https://fr.wikipedia.org/wiki/Robotique
+1	200	5681	https://fr.wikipedia.org/wiki/Robot	UTF-8
+2	200	1161	https://fr.wikipedia.org/wiki/Robot_de_cuisine	UTF-8
+3	301	1765	fr.wikipedia.org/wiki/Robot_d%27indexation	
+4	200	2583	https://fr.wikipedia.org/wiki/Bot_informatique	UTF-8
+5	200	1167	https://fr.wikipedia.org/wiki/Atlas_(robot)	UTF-8
+6	000	0	https://roboty.magistry.fr	
+7	404	440	https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)	UTF-8
+8	429	4807	https://fr.wiktionary.org/wiki/robot	utf-8
+9	200	1058	https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots	utf-8
+10	429	13023	https://fr.wikipedia.org/wiki/Robotique	utf-8
