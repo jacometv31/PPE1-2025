@@ -61,3 +61,10 @@ lynx -dump -nolist permet de convertir la page web en texte brut.
 wc -w permet de compter les mots uniquement dans le texte lisible.  
 Pour l'affichage j'ai rajouter le ${mots} avant ${line} car quand je le plaçait à la fin de la ligne echo cela provoquait un bug d'affichage.  
 Le nombre de mots a pu être récupérer sur tous les sites sauf roboty.magistry.fr qui affiche un message d'erreur indiquant que l'accès à ce site est impossible.  
+  
+Suite à la correction des profs qui nous ont dit de ne pas mettre les chemins des fichier directement dans le script, j'ai légèrement modifié ce dernier:  
+J'ai rajouté à mon code URL_FILE="$1" pour le fichier d'entrée et OUTPUT_FILE="$2" pour le fichier de sortie.  
+Cela me permet de mettre les fichiers en argument de mon script.  
+Si je déplace les fichiers, j'ai juste à noté le bon chemin du fichier en argument de mon script.  
+J'ai également rajouté une condition à mon script, pour qu'il m'affiche un message d'erreur si jamais il n'y a pas le bon nombre d'argument.  
+
