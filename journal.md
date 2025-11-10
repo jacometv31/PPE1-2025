@@ -68,3 +68,18 @@ Cela me permet de mettre les fichiers en argument de mon script.
 Si je déplace les fichiers, j'ai juste à noté le bon chemin du fichier en argument de mon script.  
 J'ai également rajouté une condition à mon script, pour qu'il m'affiche un message d'erreur si jamais il n'y a pas le bon nombre d'argument.  
 
+Miniprojet 2: Exercice: transformer la sortie tabulaire en HTML
+  
+Pour cet exercice, j'ai repris mon ancien script miniprojet.sh que j'ai modifié.  
+Après l'annonce des argument, j'ai commencé à écrire mon code HTML avec un echo.  
+Dans ce code j'y ai mis une entête (head) et un corps (body).  
+Dans l'entête, j'y ai mis l'encodage de la page (UTF-8), un titre pour nommer la page et une balise style, qui permet la mise en forme de la page et surtout du tableau.  
+Dans le corps, j'y ai mis le tableau grâce à la balise table. Dans cette balise table, j'ai rajouté des balises tr et th afin de créer un ligne d'entête pour mon tableau.  
+Après cette première ligne, j'ai mis un premier $OUTPUT_FILE afin de crée le fichier, écrit l’entête et début du tableau.  
+Ensuite, j'ai mis ma bloucle permettant de parcourir les urls. J'ai encore utilisé les balises tr et th pour que les résultats de la boucle soit bien dans le tableau.  
+J'ai rajouté un deuxième $OUTPUT_FILE afin d'ajouter chaque ligne <tr> pour chaque URL dans le tableau. Et j'ai fini ma boucle.  
+Enfin, j'ai rajouté: echo "</table></body></html>" >> "$OUTPUT_FILE" afin d'ajouter la fin du tableau et des balises HTML pour compléter le document.  
+  
+Maintenant, en exécutant notre script, on ajoute en argument le fichier d'entrée fr.txt et le fichier de sortie tableau-fr.html .  
+En mettant les chemins corrects des fichiers afin d'avoir le script dans le dossier programmes, le fichier d'entrée dans le dossier urls et le fichier de sortie dans le dossier tableaux.  
+Une fois le script exécuté, le fichier de sortie tableau-fr.html sera créé et il affichera le tableau des urls sur le navigateur.  
