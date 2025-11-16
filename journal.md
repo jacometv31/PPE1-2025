@@ -91,4 +91,8 @@ Sur cette page, j'ai écrit une phrase résumant le miniprojet et j'ai créé un
 Sur cette page j'ai utilisé Bulma pour changer le CSS. Pour ce faire j'ai utilisé la balise suivante dans l'entête de la page:  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">  
 J'ai également supprimé l'ancien CSS de ma page du Miniprojet 2 pour le remplacer par celui-ci.  
-
+Après cela, j'ai push mon dossier sur GitHub et j'ai créé un site à partir de mon dépôt.  
+Pour cela, je suis allé dans Settings en haut à droite du dépôt puis dans Pages.  
+Dans Pages, je suis allé dans la section Branch et j'ai cliqué sur Main.  
+Après avoir sauvegardé, j'ai attendu quelques instants et le site a été créé.  
+Il est disponible avec le lien suivant: https://jacometv31.github.io/PPE1-2025/ .  
