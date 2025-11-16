@@ -88,8 +88,8 @@ Miniprojet 3: Exercice: créer des pages web GitHub
   
 Pour cette exercice, j'ai créé un page html que j'ai appelé index.html et que j'ai placé à la racine de mon dossier.  
 Sur cette page, j'ai écrit une phrase résumant le miniprojet et j'ai créé un lien vers la page html du Miniprojet 2.  
-Sur cette page j'ai utilisé Bulma pour changer le CSS. Pour ce faire j'ai utilisé la balise suivante dans l'entête de la page:  
-  "<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">"  
+Sur cette page j'ai utilisé Bulma pour changer le CSS. Pour ce faire j'ai utilisé une balise link dans l'entête de la page.  
+Dans cette balise il y a un lien qui permet de récupérer la bibliothèque Bulma: https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css .  
 J'ai également supprimé l'ancien CSS de ma page du Miniprojet 2 pour le remplacer par celui-ci.  
 Après cela, j'ai push mon dossier sur GitHub et j'ai créé un site à partir de mon dépôt.  
 Pour cela, je suis allé dans Settings en haut à droite du dépôt puis dans Pages.  
