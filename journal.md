@@ -83,3 +83,12 @@ Enfin, j'ai rajouté: echo "</table></body></html>" >> "$OUTPUT_FILE" afin d'ajo
 Maintenant, en exécutant notre script, on ajoute en argument le fichier d'entrée fr.txt et le fichier de sortie tableau-fr.html .  
 En mettant les chemins corrects des fichiers afin d'avoir le script dans le dossier programmes, le fichier d'entrée dans le dossier urls et le fichier de sortie dans le dossier tableaux.  
 Une fois le script exécuté, le fichier de sortie tableau-fr.html sera créé et il affichera le tableau des urls sur le navigateur.  
+  
+Miniprojet 3: Exercice: créer des pages web GitHub  
+  
+Pour cette exercice, j'ai créé un page html que j'ai appelé index.html et que j'ai placé à la racine de mon dossier.  
+Sur cette page, j'ai écrit une phrase résumant le miniprojet et j'ai créé un lien vers la page html du Miniprojet 2.  
+Sur cette page j'ai utilisé Bulma pour changer le CSS. Pour ce faire j'ai utilisé la balise suivante dans l'entête de la page:  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">  
+J'ai également supprimé l'ancien CSS de ma page du Miniprojet 2 pour le remplacer par celui-ci.  
+
